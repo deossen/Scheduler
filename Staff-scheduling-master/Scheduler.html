@@ -1,0 +1,104 @@
+﻿<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>La Trobe Scheduling</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>University Staff Scheduling System</h1>
+        <h2>Scheduler</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="MainPage.html">Main page</a>
+            <li><a href="Overview.html">Overview page</a>
+            <li><a href="StaffOverview.html">StaffOverview page</a>
+            <li><a href="Scheduler.html">Scheduler</a>
+            <li><a href="SchedulingPage.html">Scheduling page</a>
+            <li><a href="ScheduleView.html">Schedule View</a>
+            <li><a href="SubjectOverview.html">SubjectOverview page</a>
+            <li><a href="AdminSubjectDB.html">AdminSubjectDB</a>
+            <li><a href="AdminUSerDB.html">AdminUserDB</a>
+        </ul>
+    </nav>
+    <hr />
+    <main>
+        <section id="schedule">
+            <h2>Current Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Staff Name</th>
+                        <th id="sched-month1">January</th>
+                        <th id="sched-month2">Febuary</th>
+                        <th id="sched-month3">March</th>
+                        <th id="sched-month4">April</th>
+                        <th id="sched-month5">May</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="sId1">John Doe</td>
+                        <td id=""></td>
+                        <td id=""></td>
+                        <td id=""></td>
+                        <td id=""></td>
+                        <td id=""></td>
+                    </tr>
+                    <tr>
+                        <td id="sId2">Jane Smith</td>
+                        <td id=""></td>
+                        <td id=""></td>
+                        <td id=""></td>
+                        <td id=""></td>
+                        <td id=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="add">
+            <h2>Add Staff</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="john smith" required><br><br>
+                <label for="DOB">Date of birth:</label>
+                <input type="text" id="DOB" name="DOB" placeholder="19/05/1990" required><br><br>
+                <label for="Role">Role:</label>
+                <input type="text" id="Role" name="Role" placeholder="mathematics" required><br><br>
+
+                <label for="day">Day:</label>
+                <select id="day" name="day" required>
+                    <option value="">Choose Amount of hours:</option>
+                    <option value="20">10 Hours part time</option>
+                    <option value="tuesday">20 Hours part time</option>
+                    <option value="Full time">Full Time</option>
+                </select><br><br>
+
+                <button type="submit">Add Staff</button>
+            </form>
+        </section>
+
+        <section id="remove">
+            <h2>Remove Staff</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <button type="submit">Remove Staff</button>
+            </form>
+        </section>
+
+        <section id="update">
+            <h2>Update Schedule</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="day">Day:</label>
+                <select id="day" name="day" required>
+                    <option value="">Choose a day:</option>
+                    <option value="monday">
+                        Monday
+ <main/>

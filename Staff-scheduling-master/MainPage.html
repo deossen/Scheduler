@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>La Trobe Staff Scheduling</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="Javascript" href="Script1.js" type="text/javascript" />
+</head>
+<body class="intro">
+    <h1><b><i>La Trobe University </i></b></h1>
+    <h2><b><i>Main Page </i></b></h2>
+    <nav>
+        <ul>
+            <li><a href="MainPage.html">Main page</a>
+            <li><a href="Overview.html">Overview page</a>
+            <li><a href="StaffOverview.html">StaffOverview page</a>
+            <li><a href="Scheduler.html">Scheduler</a>
+            <li><a href="SchedulingPage.html">Scheduling page</a>
+            <li><a href="ScheduleView.html">Schedule View</a>
+            <li><a href="SubjectOverview.html">SubjectOverview page</a>
+            <li><a href="AdminSubjectDB.html">AdminSubjectDB</a>
+            <li><a href="AdminUSerDB.html">AdminUserDB</a>
+
+        </ul>
+    </nav>
+    <hr />
+    <h3>Home Page</h3>
+    <header>
+        <main>
+            <section>
+                <h2>Welcome to the La trobe Staff Scheduling System</h2>
+                <p>Our system is designed to help manage the scheduling of staff at the university. With our easy-to-use interface, you can quickly view the current schedule, add new staff members, remove staff members, and update the schedule as needed.</p>
+                <p>Our system is ideal for administrators who are responsible for managing the schedules of university staff, as well as for individual staff members who need to view their schedules or make changes.</p>
+            </section>
+        </main>
+    </header>
+    <!-- Button to open the modal login form -->
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+              class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+            </div>
+        </form>
+    </div>
+    <hr />
+</body>
+<footer>
+    <h4>La Trobe University </h4>
+</footer>
+</html>
